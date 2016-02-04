@@ -7,21 +7,32 @@
 //
 
 #import "ViewController.h"
+#import "DNRapper.h"
+#import "DNFaceView.h"
 
 @interface ViewController ()
-
+@property (nonatomic, strong) IBOutlet UIScrollView *scrollView;
+@property (nonatomic, strong) IBOutlet UIStackView *stackView;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+    DNRapper *kanye = [[DNRapper alloc] init];
+    kanye.name = @"kanye";
+    
+    
+    CGFloat y = 40;
+    CGFloat w = self.view.frame.size.width;
+    CGFloat h = w;
+    
+    for (NSInteger i=0; i<5; i++) {
+        DNFaceView *faceView = [[DNFaceView alloc] initWithFrame:CGRectMake(0, y, w, h) rapper:kanye];
+        [self.stackView addArrangedSubview:faceView];
+    }
+    
 }
 
 @end

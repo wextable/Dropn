@@ -16,11 +16,68 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BA4-pF-RkM">
+                                <rect key="frame" x="20" y="40" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Xyy-SQ-8uj"/>
+                                    <constraint firstAttribute="height" constant="60" id="lA9-l6-U4R"/>
+                                </constraints>
+                                <state key="normal" image="rapper_kanye"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uHn-Z1-4L7">
+                                <rect key="frame" x="520" y="40" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="UH2-7H-ZmV"/>
+                                    <constraint firstAttribute="width" constant="60" id="lGo-OA-R79"/>
+                                </constraints>
+                                <state key="normal" image="rapper_kanye"/>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" directionalLockEnabled="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0xb-Tu-q0H">
+                                <rect key="frame" x="0.0" y="120" width="600" height="390"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uxo-ry-efs"/>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.74901960779999999" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="uxo-ry-efs" firstAttribute="leading" secondItem="0xb-Tu-q0H" secondAttribute="leading" id="3tQ-7d-7uR"/>
+                                    <constraint firstAttribute="bottom" secondItem="uxo-ry-efs" secondAttribute="bottom" id="LWr-6u-Tw5"/>
+                                    <constraint firstAttribute="trailing" secondItem="uxo-ry-efs" secondAttribute="trailing" id="bHB-YO-zLa"/>
+                                    <constraint firstItem="uxo-ry-efs" firstAttribute="top" secondItem="0xb-Tu-q0H" secondAttribute="top" id="x9X-pf-Ouo"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4d-Qe-OiT">
+                                <rect key="frame" x="227" y="530" width="145" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="7yJ-Ip-VPG"/>
+                                </constraints>
+                                <state key="normal" title="Record or Something"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0xb-Tu-q0H" firstAttribute="top" secondItem="BA4-pF-RkM" secondAttribute="bottom" constant="20" id="0WT-nP-Iia"/>
+                            <constraint firstItem="0xb-Tu-q0H" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3XD-MF-4C3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="b4d-Qe-OiT" secondAttribute="bottom" constant="40" id="80R-Oo-QyY"/>
+                            <constraint firstItem="b4d-Qe-OiT" firstAttribute="top" secondItem="0xb-Tu-q0H" secondAttribute="bottom" constant="20" id="HnL-nc-9xa"/>
+                            <constraint firstAttribute="trailing" secondItem="0xb-Tu-q0H" secondAttribute="trailing" id="Ivb-36-LoS"/>
+                            <constraint firstItem="BA4-pF-RkM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="JqW-m8-alf"/>
+                            <constraint firstAttribute="trailing" secondItem="uHn-Z1-4L7" secondAttribute="trailing" constant="20" id="PYv-Rd-K5m"/>
+                            <constraint firstItem="BA4-pF-RkM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="VXU-AT-BZC"/>
+                            <constraint firstItem="uHn-Z1-4L7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="YmM-Vy-5fC"/>
+                            <constraint firstItem="b4d-Qe-OiT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ovG-VG-hDq"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scrollView" destination="0xb-Tu-q0H" id="gSG-Uo-DB2"/>
+                        <outlet property="stackView" destination="uxo-ry-efs" id="v0p-ZI-fOX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="rapper_kanye" width="180" height="180"/>
+    </resources>
 </document>

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		65B140091C630DD80008FE1C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B140011C630DD80008FE1C /* AppDelegate.m */; };
 		65B1400A1C630DD80008FE1C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B140061C630DD80008FE1C /* ViewController.m */; };
+		65B1400E1C6313190008FE1C /* DNFaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B1400D1C6313190008FE1C /* DNFaceView.m */; };
+		65B140111C6313530008FE1C /* DNRapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B140101C6313530008FE1C /* DNRapper.m */; };
 		65BC18531C6309ED004E50AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BC18521C6309ED004E50AE /* main.m */; };
 		65BC185C1C6309ED004E50AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65BC185A1C6309ED004E50AE /* Main.storyboard */; };
 		65BC185E1C6309ED004E50AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65BC185D1C6309ED004E50AE /* Assets.xcassets */; };
@@ -39,6 +41,10 @@
 		65B140011C630DD80008FE1C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		65B140051C630DD80008FE1C /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		65B140061C630DD80008FE1C /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		65B1400C1C6313190008FE1C /* DNFaceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNFaceView.h; sourceTree = "<group>"; };
+		65B1400D1C6313190008FE1C /* DNFaceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNFaceView.m; sourceTree = "<group>"; };
+		65B1400F1C6313530008FE1C /* DNRapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNRapper.h; sourceTree = "<group>"; };
+		65B140101C6313530008FE1C /* DNRapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNRapper.m; sourceTree = "<group>"; };
 		65BC184E1C6309ED004E50AE /* dropn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dropn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65BC18521C6309ED004E50AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		65BC185B1C6309ED004E50AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -110,6 +116,8 @@
 		65B140031C630DD80008FE1C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				65B1400F1C6313530008FE1C /* DNRapper.h */,
+				65B140101C6313530008FE1C /* DNRapper.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -133,8 +141,17 @@
 		65B140081C630DD80008FE1C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				65B1400C1C6313190008FE1C /* DNFaceView.h */,
+				65B1400D1C6313190008FE1C /* DNFaceView.m */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		65B1400B1C6312E70008FE1C /* Nibs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Nibs;
 			sourceTree = "<group>";
 		};
 		65BC18451C6309ED004E50AE = {
@@ -161,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				65B13FFE1C630DD80008FE1C /* Classes */,
+				65B1400B1C6312E70008FE1C /* Nibs */,
 				65BC185A1C6309ED004E50AE /* Main.storyboard */,
 				65BC185D1C6309ED004E50AE /* Assets.xcassets */,
 				65BC185F1C6309ED004E50AE /* LaunchScreen.storyboard */,
@@ -329,6 +347,8 @@
 				65B140091C630DD80008FE1C /* AppDelegate.m in Sources */,
 				65BC18531C6309ED004E50AE /* main.m in Sources */,
 				65B1400A1C630DD80008FE1C /* ViewController.m in Sources */,
+				65B1400E1C6313190008FE1C /* DNFaceView.m in Sources */,
+				65B140111C6313530008FE1C /* DNRapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
